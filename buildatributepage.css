@@ -1,101 +1,120 @@
 body {
-    font-size: 1.5vw;
+    font-family: 'Raleway', sans-serif !important;
 }
 
-#main {
-    margin: 0;
+hr {
+    background-color: white;
+}
+
+form {
+    display: inline;
     padding: 0;
-}
-
-div {
     margin: 0;
+}
+
+main {
+    margin: 0 1.5em;
+}
+
+.jumbotron-fluid img {
+    margin-right: 4vw;
+    margin-left: -8vw;
     padding: 0;
+    width: 70vw;
 }
 
-h1 {
-    padding-top: 60vh;
-    font-size: 6vw;
-    font-family: 'Press Start 2P', cursive;
+.navbar-light {
+    background-color: #FF8C00;
+    font-weight: 800;
+    padding-left: 0;
+}
+
+.jumbotron-fluid {
+    padding: 5vh 10vh;
+    text-align: center;
+    background: no-repeat center/cover url("zoran-zonde-stojanovski-44795-unsplash.jpg");
     color: white;
-    margin: auto;
-    text-align: center;
+    font-weight: 800;
 }
 
-a {
-  color: white;
+.submit-button {
+    background-color: darkorange;
+    font-weight: normal;
+    color: black;
+    border: 1px solid black;
+    border-radius: 0;
+    height: 2.5em;
+    margin-top: 0.5em;
 }
 
-a:visited {
-    color: white;
+.submit-button:hover {
+    color: gold;
+    background-color: black;
+    transition-property: color, background-color;
+    transition-duration: 0.75s;
 }
 
-.content {
-    box-sizing: border-box !important;
-    display: grid;
-    background: #222D32;
-    width: 100%;
-    grid-auto-columns: 1fr;
-    grid-template-columns: min-content;
-    grid-auto-rows: min-content;
-    grid-template-rows: min-content min-content min-content;
-    justify-items: stretch;
-}
-
-.startpage {
-    height: 100vh;
-    background: no-repeat center/cover url("https://cdn-images-1.medium.com/max/1600/1*X135jEpb1uAtd199tqOtfA.jpeg");
-    text-align: center;
-}
-
-.contentpage {
-    color: white;
-    margin: 2%;
-}
-
-.short-bio {
-    grid-area: 1 / 1 / span 1 / last-line;
-    text-align: center;
-    border: 1em groove #B44346;
-    background-color: #B44346;
-    padding: auto;
-    align-self: start;
-}
-
-.portrait {
-    display: block;
-    max-width: 10em;
-    margin: auto auto;
-    border-radius: 50%;
-    border: 0.5em solid white;
-
-}
-
-
-.detailed-bio {
-    grid-area: 2 / 1 / span 1 / last-line;
-    border: 1em ridge darkgreen;
-    background-color: darkgreen;
-    align-self: end;
-    padding: 1em;
-    text-align: center;
-
-}
-
-.external-links {
-    grid-area: 3 / 2 / span 1 / last-line;
-    border: 1em ridge darkgreen;
-    background-color: darkgreen;
-    align-self: flex-start;
-    text-align: center;
+.email-form {
     display: flex;
-    align-items: flex-start;
     flex-direction: row;
+    justify-content: center;
     flex-wrap: wrap;
-    justify-content: space-around;
-    flex-basis: 1fr;
 }
 
-.external-links a {
-    text-decoration: none;
-    font-size: 5em;
+.lead {
+    text-align: center;
+}
+
+.highlights-content {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+
+.highlights-icon {
+    align-self: center;
+    font-size: 2em;
+/*     padding: 0; */
+/*     justify-content: ; */
+    flex-basis: 10vw;
+    color: darkorange;
+}
+
+.highlights-desc {
+/*     flex-basis: 80vw; */
+/*     padding: 0; */
+/*     margin: 0; */
+}
+
+.test {
+    float: left;
+}
+
+#header-img {
+    margin-left: -3%;
+    width: 300px;
+    height: auto;
+}
+
+#email {
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 0;
+    padding: 0 1em;
+    margin: 0.5em 0.5em;
+    height: 2.5em;
+
+}
+
+@media (max-width: 400px) {
+    #header-img {
+        width: 180px;
+    }
+
+}
+
+@media (max-width: 566px) {
+    .jumbotron-fluid {
+        text-align: left;
+    }
 }
