@@ -1,42 +1,76 @@
 <!DOCTYPE html>
-
 <html lang="en" dir="ltr">
 
     <head>
         <meta charset="utf-8">
-        <title>Quincy Larson: The Guy Who Teaches Millions To Code For Free</title>
-        <link rel="stylesheet" type="text/css" href="buildatributepage.css">
-        <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="bootstrap.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:400,800" rel="stylesheet">
+        <script src="jquery3.3.1.js"></script>
+        <script src="bootstrap.bundle.js"></script>
+        <link rel="stylesheet" type="text/css" href="productlandingpage.css">
+        <title>Original Trombone</title>
     </head>
 
-    <body id="main">
-        <div>
-            <div class="startpage">
-                <h1 id="Quincy Larson">QUINCY LARSON</h1>
-            </div>
-            <main class="content">
-                <div id="img-div" class="short-bio contentpage">
-                    <img id="image" class="portrait" src="http://static5.businessinsider.com/image/546cf3466bb3f7e0717f91b1-960/quincy.jpg">
-                    <header><div id="img-caption" class="short-bio-content"><strong>Quincy Larson</strong> is the guy who created <a href="https://www.freecodecamp.org">FreeCodeCamp. </a> It is a website which teaches people to program for free.</div></header>
-                </div>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#"><img id="header-img" src="/home/megamind/projekts/freecodecamp/productlandingpage/original_trombones.png"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
 
-                <div id="tribute-info" class="detailed-bio contentpage">
-                    Quincy founded <a target="_blank" rel="noopener noreferrer" href="https://www.freecodecamp.org">FreeCodeCamp.org</a>, a community of millions of people who learn to code together - both on our learning platform and through in-person
-                    study groups in more than 2,000 cities around the world. Before that, he did his grad work in China through an American university, and went through an intensive Mandarin program. During his five years in China, he taught at and served
-                    as an interpreter for various language training operations. He also recruited MBA students. He worked as a teacher and tutor throughout college and graduate school. He served as director of several schools in the US and China, and
-                    increased their academic rigor while simultaneously growing their student populations. Along the way, he learned to code. Quincy wrote scripts to automate our school workflows so he could free teachers and administrators to spend more
-                    time with students.
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                    </ul>
                 </div>
+            </nav>
 
-                <div class="external-links contentpage">
-                    <a id="tribute-link" class="fab fa-linkedin" href="https://www.linkedin.com/in/quincylarson/" target="_blank"></a>
-                    <a class="fab fa-wikipedia-w" href="https://en.wikipedia.org/wiki/FreeCodeCamp" target="_blank"></a>
-                    <a class="fab fa-twitter" href="https://twitter.com/ossia" target="_blank"></a>
+            <section class="jumbotron jumbotron-fluid">
+                <h1 class="sr-only">Original Trombones</h1>
+                <img src="/home/megamind/projekts/freecodecamp/productlandingpage/original_trombones.png" alt="Original Trombones Brand Image">
+                <p class="lead">Handcrafted, home-made masterpieces</p>
+                <hr class="my-4">
+                <form action="https://www.freecodecamp.com/email-submit" method="post">
+                    <div class="email-form"><input id="email" type="email" name="email-input" placeholder="Enter your email address" required>
+                        <button class="submit-button" type="submit" name="submit">Get Started</button></div>
+                </form>
+            </section>
+        </header>
 
+        <main>
+            <section class="highlights">
+
+                <div class="highlights-content">
+                    <div class="highlights-icon"><i class="fas fa-fire"></i></div>
+                    <div class="highlights-desc">
+                        <h2>Premium Materials</h2>
+                        <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
+                    </div>
                 </div>
-            </main>
-        </div>
+                <div class="highlights-content">
+                    <div class="highlights-icon"><i class="fas fa-truck"></i></div>
+                    <div class="highlights-desc">
+                        <h2>Fast Shipping</h2>
+                        <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
+                    </div>
+                </div>
+                <div class="highlights-content">
+                    <div class="highlights-icon"><i class="fas fa-battery-full"></i></div>
+                    <div class="highlights-desc">
+                        <h2>Quality Assurance</h2>
+                        <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
     </body>
 
 </html>
