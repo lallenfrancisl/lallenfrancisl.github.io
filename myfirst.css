@@ -16,11 +16,11 @@ main {
     margin: 0 1.5em;
 }
 
-.jumbotron-fluid img {
-    margin-right: 4vw;
-    margin-left: -8vw;
-    padding: 0;
-    width: 70vw;
+.jumbotron-fluid .jumbotron-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
 }
 
 .navbar-light {
