@@ -16,7 +16,7 @@ main {
     margin: 0 1.5em;
 }
 
-.jumbotron-fluid .jumbotron-image {
+.jumbotron-image {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -30,7 +30,7 @@ main {
 }
 
 .jumbotron-fluid {
-    padding: 5vh 10vh;
+    padding: 2vw 5vw;
     text-align: center;
     background: no-repeat center/cover url("zoran-zonde-stojanovski-44795-unsplash.jpg");
     color: white;
@@ -73,9 +73,8 @@ main {
 
 .highlights-icon {
     align-self: center;
+    width: 3em;
     font-size: 2em;
-/*     padding: 0; */
-/*     justify-content: ; */
     flex-basis: 10vw;
     color: darkorange;
 }
@@ -83,7 +82,7 @@ main {
 .highlights-desc {
 /*     flex-basis: 80vw; */
 /*     padding: 0; */
-/*     margin: 0; */
+    margin: ;
 }
 
 .test {
@@ -91,7 +90,7 @@ main {
 }
 
 #header-img {
-    margin-left: -3%;
+    margin-left: 1%;
     width: 300px;
     height: auto;
 }
@@ -109,6 +108,16 @@ main {
 @media (max-width: 400px) {
     #header-img {
         width: 180px;
+    }
+    
+    .highlights-content {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .highlights-icon {
+        font-size: 3.5em;
     }
 
 }
