@@ -69,24 +69,26 @@ main {
     display: flex;
     flex-wrap: nowrap;
     justify-content: flex-start;
+    margin: 0 15%;
 }
 
 .highlights-icon {
     align-self: center;
-    width: 3em;
     font-size: 2em;
-    flex-basis: 10vw;
     color: darkorange;
 }
 
-.highlights-desc {
-/*     flex-basis: 80vw; */
-/*     padding: 0; */
-    margin: ;
+.highlights-icon .fas {
+    width: 10vw;
+    text-align: center;
 }
 
-.test {
-    float: left;
+.highlights-desc {
+    flex-basis: 90vw;
+}
+
+.highlights hr {
+    width: 60%;
 }
 
 #header-img {
@@ -109,8 +111,14 @@ main {
     #header-img {
         width: 180px;
     }
+}
+
+@media (max-width: 566px) {
+    .jumbotron-fluid {
+        text-align: left;
+    }
     
-    .highlights-content {
+        .highlights-content {
         flex-wrap: wrap;
         justify-content: center;
         text-align: center;
@@ -119,11 +127,8 @@ main {
     .highlights-icon {
         font-size: 3.5em;
     }
-
-}
-
-@media (max-width: 566px) {
-    .jumbotron-fluid {
-        text-align: left;
+    
+    .highlights-desc {
+        flex-basis: 100vw;
     }
 }
