@@ -32,12 +32,14 @@ ul {
     background-color: #FF8C00;
     font-weight: 800;
     padding-left: 0;
-/*     position: absolute; */
 }
 
 .navbar-light .navbar-toggler {
     border: 0;
-    color: red;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: black;
 }
 
 .jumbotron-fluid {
@@ -63,7 +65,7 @@ ul {
 .submit-button:hover {
     color: gold;
     background-color: black;
-    
+
 }
 
 .email-form {
@@ -91,7 +93,7 @@ ul {
 }
 
 .highlights-icon .fas {
-    width: 10rem;
+    width: 6rem;
     text-align: center;
 }
 
@@ -119,7 +121,7 @@ iframe {
 
 .pricing-box {
     border: 1px solid #dee2e6;
-    border-radius: 2%;
+    border-radius: 0.6em;
     flex-basis: 20em;
     text-align: center;
     line-height: 2em;
@@ -127,12 +129,33 @@ iframe {
     position: relative;
 	box-shadow: 0px 1px 18px 6px #A0A0A0;
     transition: all 0.25s ease-in;
+    padding: 2%;
 }
 
-.pricing-box:hover {
+.pricing-box:active {
     box-shadow: none;
     margin-top: 2.5em;
     margin-bottom: 1.5em;
+}
+
+.pricing-box h3 {
+    background-color: darkorange;
+    border-radius: 0.6em;
+}
+
+.pricing-box button {
+    color: black;
+    background-color: darkorange;
+    border: 0;
+    width: 50%;
+    border-radius: 1em;
+    
+}
+
+.pricing-box p {
+    background-color: black;
+    color: darkorange;
+    border-radius: 1em;
 }
 
 #header-img {
