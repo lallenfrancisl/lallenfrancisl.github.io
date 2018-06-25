@@ -16,6 +16,11 @@ main {
     margin: 0 1.5em;
 }
 
+ul {
+    list-style: none;
+    padding: 0;
+}
+
 .jumbotron-image {
     display: block;
     margin-left: auto;
@@ -27,6 +32,12 @@ main {
     background-color: #FF8C00;
     font-weight: 800;
     padding-left: 0;
+/*     position: absolute; */
+}
+
+.navbar-light .navbar-toggler {
+    border: 0;
+    color: red;
 }
 
 .jumbotron-fluid {
@@ -45,13 +56,14 @@ main {
     border-radius: 0;
     height: 2.5em;
     margin-top: 0.5em;
+    transition-property: color, background-color;
+    transition-duration: 0.75s;
 }
 
 .submit-button:hover {
     color: gold;
     background-color: black;
-    transition-property: color, background-color;
-    transition-duration: 0.75s;
+    
 }
 
 .email-form {
@@ -91,6 +103,38 @@ main {
     width: 60%;
 }
 
+iframe {
+    margin-top: 4rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90vw;
+}
+
+.model-pricing {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pricing-box {
+    border: 1px solid #dee2e6;
+    border-radius: 2%;
+    flex-basis: 20em;
+    text-align: center;
+    line-height: 2em;
+    margin: 2em 2% 2em 2%;
+    position: relative;
+	box-shadow: 0px 1px 18px 6px #A0A0A0;
+    transition: all 0.25s ease-in;
+}
+
+.pricing-box:hover {
+    box-shadow: none;
+    margin-top: 2.5em;
+    margin-bottom: 1.5em;
+}
+
 #header-img {
     margin-left: 1%;
     width: 300px;
@@ -117,18 +161,18 @@ main {
     .jumbotron-fluid {
         text-align: left;
     }
-    
-        .highlights-content {
+
+    .highlights-content {
         flex-wrap: wrap;
         justify-content: center;
         text-align: center;
         margin: 0 5%;
     }
-    
+
     .highlights-icon {
         font-size: 3.5em;
     }
-    
+
     .highlights-desc {
         flex-basis: 100vw;
     }
