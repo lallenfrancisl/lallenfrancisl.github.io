@@ -127,8 +127,8 @@ iframe {
     line-height: 2em;
     margin: 2em 2% 2em 2%;
     position: relative;
-	box-shadow: 0px 1px 18px 6px #A0A0A0;
-    transition: all 0.25s ease-in;
+	    box-shadow: 0px 1px 18px 6px #A0A0A0;
+    transition: all 0.15s ease-in;
     padding: 2%;
 }
 
