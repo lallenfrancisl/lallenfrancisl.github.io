@@ -36,7 +36,6 @@ function resetGame() {
     for (let i = 0; i < gameSize; ++i) {
         // add colors to the squares
         colorSquare[i].style.backgroundColor = rgbColors[i];
-        colorSquare[i].style.paddingTop = "30%";
         h1.style.backgroundColor = rgbColors[Math.floor(Math.random() * 4)];
         newGame.textContent = "New Colors";
         feedback.textContent = "";
@@ -81,7 +80,6 @@ for (let i = 0; i < gameSize; ++i) {
             gameEnd();
         } else {
             colorSquare[i].style.backgroundColor = "transparent";
-            colorSquare[i].style.padding = 0;
             feedback.textContent = "Try Again :-)";
         }
     });
